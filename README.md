@@ -19,12 +19,16 @@ system connects to the Database (Oracle) to store/retrieve the data (that is dif
 
 Main features
 --------------------------------
-JSON-RPC-Simple works very fast, supports synchronous or asynchronous. It provides reliable RPC call between scripting environment
+JSON-RPC-Stomp-Simple works very fast, supports synchronous or asynchronous. It provides reliable RPC call between scripting environment
 and expose services as "Queue Name" and Its' "Method"s. Due to JSON is a free schema model, JSON can serialize/deserialize a
 hash/associate arrays of Perl/PHP as parameters and returns, very easily, the solution is very flexible and more friendly
 with scripting environment.
 
 Helping by ActiveMQ infrastructure or any Stomp Message Broker, you can make a completely high available, load balancing, distributed system. 
+
+### Supported roles
+1. JSON-RPC Server (Stomp Consumer) with built-in handler/dispatcher to sub in Perl (any persistent system) and PHP functions (command line).
+2. JSON-RPC Client (Stom Producer) in Perl (CGI, mod_perl) and PHP (thread safe with mod_php).
 
 To do
 --------------------------------
